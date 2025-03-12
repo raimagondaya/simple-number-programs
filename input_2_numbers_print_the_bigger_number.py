@@ -11,7 +11,7 @@ num2 = float(input("Number 2: "))
 
 if num1 > num2:
     print(num1)
-if num2 > num1:
+elif num2 > num1:
     print(num2)
-if num2 == num1 :
+else :
      print("The two numbers are the same, no bigger number")
