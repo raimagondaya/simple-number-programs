@@ -10,9 +10,13 @@ print("You will input 10 numbers and the program will count how many of those nu
 odd_numbers = 0
 
 for i in range(10):
-    num = float(input(f"Enter number {i+1}: "))
-    
-    if num % 2 != 0:  # Check if the number is odd
-        odd_numbers += 1
+    while True:
+        try:
+            num = float(input(f"Enter number {i+1}: "))  
+            if num % 2 != 0:
+                odd_numbers += 1
+            break
+        except ValueError:
+            print("Enter a valid number.")
 
 print(f"There are {odd_numbers} odd numbers")

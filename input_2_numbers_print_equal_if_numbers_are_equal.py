@@ -3,8 +3,15 @@
 #if equal print "Equal"
 #else print "not equal"
 
-num1 = float(input("1st number: "))
-num2 = float(input("2nd number: "))
+def get_valid_input(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Please enter a valid number. Retry")
+
+num1 = get_valid_input("1st number: ")
+num2 = get_valid_input("2nd number: ")
 
 if num1 == num2:
     print("Equal")
