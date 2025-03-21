@@ -5,7 +5,7 @@
 #total = (num 1 - 10)
 #print total
 
-print("Enter 10 numbers and we will add all of them and print the sum:1")
+print("Enter 10 numbers and we will add all of them and print the sum:")
 
 total = 0
 
